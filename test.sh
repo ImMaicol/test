@@ -8,7 +8,7 @@ PRIVATE_IP=$(hostname -I | awk '{print $1}')
 CIDR_NETWORK="${PRIVATE_IP%.*}.0/24"
 
 # Define datasets and directories
-CONFIG_DATASETS=("prowlarr" "radarr" "sonarr" "jellyseerr" "recyclarr" "Emby" "qbittorrent")
+CONFIG_DATASETS=("prowlarr" "radarr" "sonarr" "jellyseerr" "recyclarr" "emby" "qbittorrent")
 MEDIA_SUBDIRECTORIES=("movies" "tv" "downloads")
 DOCKER_COMPOSE_PATH="/mnt/$POOLNAME/docker"
 QBITTORRENT_WIREGUARD_DIR="/mnt/$POOLNAME/configs/qbittorrent/wireguard"
