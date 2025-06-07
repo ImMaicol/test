@@ -144,8 +144,6 @@ services:
       CRON_SCHEDULE: 0 0 * * *
     volumes:
       - /mnt/tank/configs/recyclarr:/config
-    devices:
-      - /dev/dri:/dev/dri
     networks:
       media_network: {}
   emby:
